@@ -1,5 +1,6 @@
 package ru.ifmo.android_2016.runcity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,11 +14,14 @@ import android.view.MenuItem;
 
 abstract class Drawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    protected DrawerLayout drawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -44,15 +48,15 @@ abstract class Drawer extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_competition) {
-            // Handle the camera action
+            startActivity(new Intent(getApplicationContext(), Competitions.class));
         } else if (id == R.id.nav_questions) {
-
+            startActivity(new Intent(getApplicationContext(), Tasks.class));
         } else if (id == R.id.nav_timer) {
-
+            startActivity(new Intent(getApplicationContext(), Timer.class));
         } else if (id == R.id.nav_email) {
-
+            startActivity(new Intent(getApplicationContext(), EmailProblem.class));
         } else if (id == R.id.nav_exit) {
-
+            startActivity(new Intent(getApplicationContext(), RegistrationActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

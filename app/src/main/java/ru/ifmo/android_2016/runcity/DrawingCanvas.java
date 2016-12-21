@@ -66,16 +66,7 @@ public class DrawingCanvas extends AppCompatActivity implements View.OnClickList
                     getContentResolver(), drawView.getDrawingCache(),
                     UUID.randomUUID().toString()+".png", "drawing");
             //feedback
-            if(imgSaved!=null){
-                Toast savedToast = Toast.makeText(getApplicationContext(),
-                        "Drawing saved to Gallery!", Toast.LENGTH_SHORT);
-                savedToast.show();
-            }
-            else{
-                Toast unsavedToast = Toast.makeText(getApplicationContext(),
-                        "Oops! Image could not be saved.", Toast.LENGTH_SHORT);
-                unsavedToast.show();
-            }
+
             drawView.destroyDrawingCache();
             saveDialog.show();
         }

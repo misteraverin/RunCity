@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import ru.ifmo.android_2016.runcity.utils.CircleCountDownView;
 
-public class Timer extends AppCompatActivity implements View.OnClickListener {
+public class Timer extends Drawer implements View.OnClickListener {
 
     protected EditText etTime;
     protected CircleCountDownView countDownView;
@@ -28,7 +28,7 @@ public class Timer extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timer);
+        setContentView(R.layout.activity_main_timer);
 
         countDownView = (CircleCountDownView) findViewById(R.id.circle_count_down_view);
         startTimerBt = (Button) findViewById(R.id.startTimer);

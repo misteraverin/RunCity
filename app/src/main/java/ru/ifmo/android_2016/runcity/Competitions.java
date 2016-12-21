@@ -33,7 +33,7 @@ import ru.ifmo.android_2016.runcity.utils.RecyclerDividersDecorator;
  * Created by -- on 11.11.2016.
  */
 
-public class Competitions extends AppCompatActivity
+public class Competitions extends Drawer
         implements LoaderManager.LoaderCallbacks<LoadResult<ArrayList<Competition>>> {
 
     private RecyclerView recyclerCompetitions;
@@ -56,12 +56,7 @@ public class Competitions extends AppCompatActivity
 
         /* TODO: Make page connection and remove this button
         Need this button to access "Сообщить о проблеме" page */
-        findViewById(R.id.email).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), RegistrationActivity.class));
-            }
-        });
+
 
         final File file = new File(getFilesDir(), "competitions.json");
         if (!file.exists()) {

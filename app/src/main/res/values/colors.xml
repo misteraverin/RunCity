@@ -3,4 +3,12 @@
     <color name="colorPrimary">@android:color/holo_orange_light</color>
     <color name="colorPrimaryDark">@android:color/holo_orange_light</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="gray_a">#aaa</color>
+    <color name="task_answered">#D0EB90</color>
+    <color name="task_right">#8ebf63</color>
+    <color name="task_wrong">#d95743</color>
+
+    <color name="open_comp">#8ebf63</color>
+    <color name="closed_comp">#d95743</color>
 </resources>

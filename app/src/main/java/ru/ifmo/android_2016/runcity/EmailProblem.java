@@ -13,7 +13,7 @@ import android.widget.Toast;
  * Created by -- on 12.12.2016.
  */
 
-public class EmailProblem extends AppCompatActivity {
+public class EmailProblem  extends Drawer {
 
     EditText textSubject;
     EditText textMessage;
