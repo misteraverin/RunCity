@@ -47,7 +47,7 @@ public class Competitions extends Drawer
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_competitions);
+        setContentView(R.layout.activity_main_competitiotns);
 
         recyclerCompetitions = (RecyclerView) findViewById(R.id.recycler_competitions);
         recyclerCompetitions.setLayoutManager(new LinearLayoutManager(this));

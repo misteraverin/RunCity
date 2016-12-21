@@ -59,8 +59,6 @@ abstract class Drawer extends AppCompatActivity
             startActivity(new Intent(getApplicationContext(), RegistrationActivity.class));
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }
