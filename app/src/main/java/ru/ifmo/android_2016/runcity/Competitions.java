@@ -1,10 +1,8 @@
 package ru.ifmo.android_2016.runcity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -25,7 +23,6 @@ import ru.ifmo.android_2016.runcity.loader.CompetitionsParser;
 import ru.ifmo.android_2016.runcity.loader.LoadResult;
 import ru.ifmo.android_2016.runcity.loader.ResultType;
 import ru.ifmo.android_2016.runcity.model.Competition;
-import ru.ifmo.android_2016.runcity.model.competitionState;
 import ru.ifmo.android_2016.runcity.utils.CompetitionsRecyclerAdapter;
 import ru.ifmo.android_2016.runcity.utils.RecyclerDividersDecorator;
 
@@ -53,9 +50,6 @@ public class Competitions extends Drawer
         recyclerCompetitions.setLayoutManager(new LinearLayoutManager(this));
         recyclerCompetitions.addItemDecoration(
                 new RecyclerDividersDecorator(getResources().getColor(R.color.gray_a)));
-
-        /* TODO: Make page connection and remove this button
-        Need this button to access "Сообщить о проблеме" page */
 
 
         final File file = new File(getFilesDir(), "competitions.json");

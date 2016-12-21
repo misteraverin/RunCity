@@ -17,7 +17,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TaskQuestion" />
         <activity android:name=".DrawingCanvas" />
-        <activity android:name=".EmailProblem" />
+        <activity android:name=".EmailProblem">
+
+        </activity>
         <activity android:name=".Competitions" />
         <activity android:name=".Timer" />
         <activity android:name=".Tasks" />

@@ -5,9 +5,6 @@
     android:layout_height="match_parent"
     android:weightSum="100">
 
-    <!-- TODO: Make page connection and remove this button
-         Need this button to access "Сообщить о проблеме" page -->
-
     <TextView
         android:id="@+id/text_comp"
         android:layout_width="match_parent"
