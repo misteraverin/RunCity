@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_competition"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Соревнования" />
+        <item android:title="Вопросы"
+            android:id="@+id/nav_questions"
+            android:icon="@android:drawable/ic_menu_help" />
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Таймер" />
+        <item
+            android:id="@+id/nav_email"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Обратная связь" />
+        <item
+            android:id="@+id/nav_exit"
+
+            android:title="Выйти" />
+    </group>
+
+</menu>
